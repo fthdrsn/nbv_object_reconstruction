@@ -1,0 +1,48 @@
+[1.685s] Invoking command in '/home/laptop13/ros2_nbv_ws/src/nbv_planner': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/build/nbv_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages:/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nbv_planner build --build-base /home/laptop13/ros2_nbv_ws/build/nbv_planner/build install --record /home/laptop13/ros2_nbv_ws/build/nbv_planner/install.log --single-version-externally-managed install_data
+[2.113s] running egg_info
+[2.114s] creating ../../build/nbv_planner/nbv_planner.egg-info
+[2.143s] writing ../../build/nbv_planner/nbv_planner.egg-info/PKG-INFO
+[2.144s] writing dependency_links to ../../build/nbv_planner/nbv_planner.egg-info/dependency_links.txt
+[2.145s] writing entry points to ../../build/nbv_planner/nbv_planner.egg-info/entry_points.txt
+[2.145s] writing requirements to ../../build/nbv_planner/nbv_planner.egg-info/requires.txt
+[2.146s] writing top-level names to ../../build/nbv_planner/nbv_planner.egg-info/top_level.txt
+[2.146s] writing manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'
+[2.246s] reading manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'
+[2.251s] writing manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'
+[2.252s] running build
+[2.253s] running build_py
+[2.253s] creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build
+[2.254s] creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib
+[2.255s] creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+[2.255s] copying nbv_planner/nbv_planner_node.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+[2.255s] copying nbv_planner/__init__.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+[2.255s] copying nbv_planner/test_candidate_views.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+[2.256s] running install
+[2.269s] running install_lib
+[2.332s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+[2.333s] copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/nbv_planner_node.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+[2.333s] copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/__init__.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+[2.333s] copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/test_candidate_views.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+[2.334s] byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/nbv_planner_node.py to nbv_planner_node.cpython-312.pyc
+[2.347s] byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/__init__.py to __init__.cpython-312.pyc
+[2.347s] byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/test_candidate_views.py to test_candidate_views.cpython-312.pyc
+[2.357s] running install_data
+[2.357s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index
+[2.357s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index
+[2.358s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index/packages
+[2.358s] copying resource/nbv_planner -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index/packages
+[2.358s] copying package.xml -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner
+[2.359s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch
+[2.359s] copying launch/nbv_planner_launch.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch
+[2.359s] copying launch/test_candidate_launch.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch
+[2.360s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/candidate_views
+[2.361s] copying candidate_views/candidate_views_200.txt -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/candidate_views
+[2.361s] creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/rviz
+[2.362s] copying rviz/reconstruction_rviz.rviz -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/rviz
+[2.362s] running install_egg_info
+[2.386s] Copying ../../build/nbv_planner/nbv_planner.egg-info to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner-0.0.0-py3.12.egg-info
+[2.386s] running install_scripts
+[2.589s] Installing nbv_planner_node script to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/nbv_planner
+[2.589s] Installing test_candidate_views script to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/nbv_planner
+[2.589s] writing list of installed files to '/home/laptop13/ros2_nbv_ws/build/nbv_planner/install.log'
+[2.648s] Invoked command in '/home/laptop13/ros2_nbv_ws/src/nbv_planner' returned '0': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/build/nbv_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages:/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nbv_planner build --build-base /home/laptop13/ros2_nbv_ws/build/nbv_planner/build install --record /home/laptop13/ros2_nbv_ws/build/nbv_planner/install.log --single-version-externally-managed install_data

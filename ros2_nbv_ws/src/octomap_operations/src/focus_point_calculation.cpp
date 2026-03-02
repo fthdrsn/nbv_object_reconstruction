@@ -1,0 +1,93 @@
+#include "octomap_operations.hpp"
+
+
+namespace octomap_operations
+{   
+/**
+ * Calculates the focus point from the given view. Focus point is the point along the ray with maximum entropy.
+ *
+ * @param pose_vec Rays are calculated  using this pose vector [x,y,z,w,qx,qy,qz] and expanded FoV.
+ * @return Focus point for the given view (pose)
+ */
+Eigen::Vector3d OctomapOperations::get_focus_point(std::vector<float>& pose_vec, std::shared_ptr<octomap::OcTree>& ot)
+{
+  // Extract position and quaternion
+  Eigen::Vector3d camera_pos(pose_vec[0], pose_vec[1], pose_vec[2]);
+  Eigen::Quaterniond q(pose_vec[3], pose_vec[4], pose_vec[5], pose_vec[6]);
+  q.normalize();
+
+  double r_ray_cast=raycast_r_max_;
+  float r_max_last=static_cast<float>(focus_pnt_focus_r_);
+  
+  double best_ray_entropy=-1e100;
+  Eigen::Vector3d focus_point(0,0,0);
+  double max_range=raycast_r_max_;
+  octomap::KeyRay ray;
+  for (int i = 0; i < static_cast<int>(unit_rays_expanded_view.size()); ++i)
+    {
+      const auto& u = unit_rays_expanded_view[i];
+      // Rotate unit ray direction
+      Eigen::Vector3d dir = q * Eigen::Vector3d(u.x(), u.y(), u.z());
+      dir.normalize();
+
+      octomap::point3d origin(camera_pos.x(), camera_pos.y(), camera_pos.z());
+      octomap::point3d direction(dir.x(), dir.y(), dir.z());
+      octomap::point3d end_point;
+      
+      bool found_endpoint = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells
+     
+      ray.reset();
+      ot->computeRayKeys(origin, end_point, ray); //Compute octree keys for all traversed voxels (excluding the end_point)
+      //Calculate the entropy of the ray
+      double ray_entropy(0);
+      for( octomap::KeyRay::iterator it = ray.begin() ; it!=ray.end(); ++it )
+        {
+        octomap::point3d coord = ot->keyToCoord(*it);
+        if (!is_inside_boundaries(Eigen::Vector3d(coord.x(), coord.y(), coord.z())))
+              continue;
+
+        octomap::OcTreeNode* node =ot->search(*it);
+        double prob_occupancy(0);
+        if(!node){
+          //Node is unknown
+          prob_occupancy=0.5;
+        }else{
+          //Node is free or occupied, get probability
+          prob_occupancy=node->getOccupancy();
+        }
+        ray_entropy+=entropy(prob_occupancy);
+        }
+
+        //Finally, include th entropy of the end point
+        // Check the end point
+        octomap::OcTreeKey end_key;
+        if(ot->coordToKeyChecked(end_point,end_key))
+        {
+          octomap::OcTreeNode* end_node =ot->search(end_key);
+          double prob_occupancy(0);
+          if(!end_node){
+            //Node is unknown
+            prob_occupancy=0.5;
+          }else{
+            //Node is free or occupied, get probability
+            prob_occupancy=end_node->getOccupancy();
+          }
+
+          ray_entropy+=entropy(prob_occupancy);
+        }     
+        
+        if(ray_entropy>best_ray_entropy)
+        {
+          best_ray_entropy=ray_entropy;
+          
+          // Transform the focus point (at distance r_max_last along the ray direction)
+          Eigen::Vector3d focus_point_local(r_max_last * u.x(), r_max_last * u.y(), r_max_last * u.z());
+          Eigen::Vector3d focus_point_rotated = q.cast<double>() * focus_point_local;
+          focus_point = camera_pos + focus_point_rotated;
+        }
+
+    }
+      
+    return focus_point;
+}
+}

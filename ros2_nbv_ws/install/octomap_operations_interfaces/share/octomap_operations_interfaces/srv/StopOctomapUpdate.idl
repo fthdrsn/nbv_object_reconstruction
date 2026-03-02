@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from octomap_operations_interfaces/srv/StopOctomapUpdate.srv
+// generated code does not contain a copyright notice
+
+
+module octomap_operations_interfaces {
+  module srv {
+    struct StopOctomapUpdate_Request {
+      boolean block_updates;
+    };
+    struct StopOctomapUpdate_Response {
+      boolean success;
+    };
+  };
+};

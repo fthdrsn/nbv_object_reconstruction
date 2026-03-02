@@ -1,0 +1,46 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "octomap_operations_interfaces/srv/ViewEvaluate_Request",
+      "fields": [
+        {
+          "name": "ig_method",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "view_list",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "run_parallel",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "octomap_operations_interfaces/srv/ViewEvaluate_Request",
+      "hash_string": "RIHS01_3f5e1da6f98b1f313833c1e5d6d14c8f4769fb35a63efbd965ba1c782df95cc9"
+    }
+  ]
+}

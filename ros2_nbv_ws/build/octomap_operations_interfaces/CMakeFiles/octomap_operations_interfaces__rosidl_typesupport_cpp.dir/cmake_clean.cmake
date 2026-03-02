@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/focus_point__type_support.cpp.o"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/focus_point__type_support.cpp.o.d"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/octomap_data__type_support.cpp.o"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/octomap_data__type_support.cpp.o.d"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/stop_octomap_update__type_support.cpp.o"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/stop_octomap_update__type_support.cpp.o.d"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/view_evaluate__type_support.cpp.o"
+  "CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/view_evaluate__type_support.cpp.o.d"
+  "liboctomap_operations_interfaces__rosidl_typesupport_cpp.pdb"
+  "liboctomap_operations_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/octomap_operations_interfaces/srv/focus_point__type_support.cpp"
+  "rosidl_typesupport_cpp/octomap_operations_interfaces/srv/octomap_data__type_support.cpp"
+  "rosidl_typesupport_cpp/octomap_operations_interfaces/srv/stop_octomap_update__type_support.cpp"
+  "rosidl_typesupport_cpp/octomap_operations_interfaces/srv/view_evaluate__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,16 @@
+{
+  "package_name": "octomap_operations_interfaces",
+  "output_dir": "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_generator_type_description/octomap_operations_interfaces",
+  "idl_tuples": [
+    "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/FocusPoint.idl",
+    "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/OctomapData.idl",
+    "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/StopOctomapUpdate.idl",
+    "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/ViewEvaluate.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

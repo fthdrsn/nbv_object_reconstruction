@@ -1,0 +1,46 @@
+running egg_info
+creating ../../build/nbv_planner/nbv_planner.egg-info
+writing ../../build/nbv_planner/nbv_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/nbv_planner/nbv_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/nbv_planner/nbv_planner.egg-info/entry_points.txt
+writing requirements to ../../build/nbv_planner/nbv_planner.egg-info/requires.txt
+writing top-level names to ../../build/nbv_planner/nbv_planner.egg-info/top_level.txt
+writing manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'
+reading manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build
+creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib
+creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+copying nbv_planner/nbv_planner_node.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+copying nbv_planner/__init__.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+copying nbv_planner/test_candidate_views.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner
+running install
+running install_lib
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/nbv_planner_node.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/__init__.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/test_candidate_views.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner
+byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/nbv_planner_node.py to nbv_planner_node.cpython-312.pyc
+byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/test_candidate_views.py to test_candidate_views.cpython-312.pyc
+running install_data
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index/packages
+copying resource/nbv_planner -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index/packages
+copying package.xml -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch
+copying launch/nbv_planner_launch.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch
+copying launch/test_candidate_launch.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/candidate_views
+copying candidate_views/candidate_views_200.txt -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/candidate_views
+creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/rviz
+copying rviz/reconstruction_rviz.rviz -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/rviz
+running install_egg_info
+Copying ../../build/nbv_planner/nbv_planner.egg-info to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner-0.0.0-py3.12.egg-info
+running install_scripts
+Installing nbv_planner_node script to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/nbv_planner
+Installing test_candidate_views script to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/nbv_planner
+writing list of installed files to '/home/laptop13/ros2_nbv_ws/build/nbv_planner/install.log'

@@ -1,0 +1,920 @@
+[0.000000] (-) TimerEvent: {}
+[0.000709] (octomap_operations_interfaces) JobQueued: {'identifier': 'octomap_operations_interfaces', 'dependencies': OrderedDict()}
+[0.000816] (nbv_planner) JobQueued: {'identifier': 'nbv_planner', 'dependencies': OrderedDict({'octomap_operations_interfaces': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces'})}
+[0.000867] (octomap_operations) JobQueued: {'identifier': 'octomap_operations', 'dependencies': OrderedDict({'octomap_operations_interfaces': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces'})}
+[0.001741] (octomap_operations_interfaces) JobStarted: {'identifier': 'octomap_operations_interfaces'}
+[0.016622] (octomap_operations_interfaces) JobProgress: {'identifier': 'octomap_operations_interfaces', 'progress': 'cmake'}
+[0.017375] (octomap_operations_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/laptop13/ros2_nbv_ws/src/octomap_operations_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces'], 'cwd': '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy'}), 'shell': False}
+[0.099847] (-) TimerEvent: {}
+[0.188052] (octomap_operations_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199995] (-) TimerEvent: {}
+[0.300283] (-) TimerEvent: {}
+[0.342388] (octomap_operations_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.377874] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400507] (-) TimerEvent: {}
+[0.500923] (-) TimerEvent: {}
+[0.547099] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.564306] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.565471] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.566794] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.581691] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.601044] (-) TimerEvent: {}
+[0.701458] (-) TimerEvent: {}
+[0.750794] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.773922] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.774481] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.775412] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.801630] (-) TimerEvent: {}
+[0.812832] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.901933] (-) TimerEvent: {}
+[1.002343] (-) TimerEvent: {}
+[1.046301] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.102553] (-) TimerEvent: {}
+[1.203036] (-) TimerEvent: {}
+[1.301280] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.303184] (-) TimerEvent: {}
+[1.403736] (-) TimerEvent: {}
+[1.453034] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.478731] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.504024] (-) TimerEvent: {}
+[1.517572] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.561026] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.604212] (-) TimerEvent: {}
+[1.644961] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.674279] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.704389] (-) TimerEvent: {}
+[1.804801] (-) TimerEvent: {}
+[1.905401] (-) TimerEvent: {}
+[2.006465] (-) TimerEvent: {}
+[2.106873] (-) TimerEvent: {}
+[2.207272] (-) TimerEvent: {}
+[2.307745] (-) TimerEvent: {}
+[2.408169] (-) TimerEvent: {}
+[2.508540] (-) TimerEvent: {}
+[2.608959] (-) TimerEvent: {}
+[2.709437] (-) TimerEvent: {}
+[2.730040] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.809690] (-) TimerEvent: {}
+[2.910325] (-) TimerEvent: {}
+[3.010779] (-) TimerEvent: {}
+[3.111186] (-) TimerEvent: {}
+[3.211918] (-) TimerEvent: {}
+[3.312900] (-) TimerEvent: {}
+[3.413543] (-) TimerEvent: {}
+[3.513936] (-) TimerEvent: {}
+[3.614494] (-) TimerEvent: {}
+[3.715176] (-) TimerEvent: {}
+[3.815629] (-) TimerEvent: {}
+[3.916163] (-) TimerEvent: {}
+[4.016996] (-) TimerEvent: {}
+[4.103579] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.117179] (-) TimerEvent: {}
+[4.217474] (-) TimerEvent: {}
+[4.317963] (-) TimerEvent: {}
+[4.418485] (-) TimerEvent: {}
+[4.518916] (-) TimerEvent: {}
+[4.619295] (-) TimerEvent: {}
+[4.648969] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.659646] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.719419] (-) TimerEvent: {}
+[4.819915] (-) TimerEvent: {}
+[4.879314] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.920191] (-) TimerEvent: {}
+[5.020689] (-) TimerEvent: {}
+[5.120993] (-) TimerEvent: {}
+[5.221491] (-) TimerEvent: {}
+[5.322145] (-) TimerEvent: {}
+[5.422623] (-) TimerEvent: {}
+[5.508625] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.522922] (-) TimerEvent: {}
+[5.608900] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.623153] (-) TimerEvent: {}
+[5.676481] (octomap_operations_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.679336] (octomap_operations_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.688228] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Configuring done (5.7s)\n'}
+[5.723438] (-) TimerEvent: {}
+[5.738371] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.759483] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces\n'}
+[5.771457] (octomap_operations_interfaces) CommandEnded: {'returncode': 0}
+[5.773549] (octomap_operations_interfaces) JobProgress: {'identifier': 'octomap_operations_interfaces', 'progress': 'build'}
+[5.773642] (octomap_operations_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy'}), 'shell': False}
+[5.823613] (-) TimerEvent: {}
+[5.851441] (octomap_operations_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.870473] (octomap_operations_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_octomap_operations_interfaces\n'}
+[5.923826] (-) TimerEvent: {}
+[6.024309] (-) TimerEvent: {}
+[6.124831] (-) TimerEvent: {}
+[6.225268] (-) TimerEvent: {}
+[6.257690] (octomap_operations_interfaces) StdoutLine: {'line': b'[  1%] Built target octomap_operations_interfaces__rosidl_generator_type_description\n'}
+[6.266938] (octomap_operations_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[6.268383] (octomap_operations_interfaces) StdoutLine: {'line': b'creating octomap_operations_interfaces.egg-info\n'}
+[6.280897] (octomap_operations_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.301637] (octomap_operations_interfaces) StdoutLine: {'line': b'writing octomap_operations_interfaces.egg-info/PKG-INFO\n'}
+[6.302273] (octomap_operations_interfaces) StdoutLine: {'line': b'writing dependency_links to octomap_operations_interfaces.egg-info/dependency_links.txt\n'}
+[6.302619] (octomap_operations_interfaces) StdoutLine: {'line': b'writing top-level names to octomap_operations_interfaces.egg-info/top_level.txt\n'}
+[6.302842] (octomap_operations_interfaces) StdoutLine: {'line': b"writing manifest file 'octomap_operations_interfaces.egg-info/SOURCES.txt'\n"}
+[6.310092] (octomap_operations_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.325451] (-) TimerEvent: {}
+[6.377586] (octomap_operations_interfaces) StdoutLine: {'line': b"reading manifest file 'octomap_operations_interfaces.egg-info/SOURCES.txt'\n"}
+[6.378411] (octomap_operations_interfaces) StdoutLine: {'line': b"writing manifest file 'octomap_operations_interfaces.egg-info/SOURCES.txt'\n"}
+[6.425674] (-) TimerEvent: {}
+[6.433482] (octomap_operations_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_octomap_operations_interfaces_egg\n'}
+[6.525866] (-) TimerEvent: {}
+[6.626301] (-) TimerEvent: {}
+[6.726741] (-) TimerEvent: {}
+[6.827134] (-) TimerEvent: {}
+[6.927489] (-) TimerEvent: {}
+[7.027885] (-) TimerEvent: {}
+[7.128901] (-) TimerEvent: {}
+[7.229455] (-) TimerEvent: {}
+[7.272065] (octomap_operations_interfaces) StdoutLine: {'line': b'[  4%] Built target octomap_operations_interfaces__cpp\n'}
+[7.273197] (octomap_operations_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/focus_point__description.c.o\x1b[0m\n'}
+[7.273923] (octomap_operations_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/stop_octomap_update__description.c.o\x1b[0m\n'}
+[7.275757] (octomap_operations_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/stop_octomap_update__functions.c.o\x1b[0m\n'}
+[7.277044] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/focus_point__type_support.c.o\x1b[0m\n'}
+[7.277451] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/octomap_data__functions.c.o\x1b[0m\n'}
+[7.279048] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/octomap_data__description.c.o\x1b[0m\n'}
+[7.282489] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.c.o\x1b[0m\n'}
+[7.285001] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/view_evaluate__description.c.o\x1b[0m\n'}
+[7.285433] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/focus_point__functions.c.o\x1b[0m\n'}
+[7.288557] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/view_evaluate__functions.c.o\x1b[0m\n'}
+[7.291401] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/octomap_data__type_support.c.o\x1b[0m\n'}
+[7.303605] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_c.dir/rosidl_generator_c/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.c.o\x1b[0m\n'}
+[7.329870] (-) TimerEvent: {}
+[7.433113] (-) TimerEvent: {}
+[7.518732] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library liboctomap_operations_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[7.533348] (-) TimerEvent: {}
+[7.581138] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 25%] Built target octomap_operations_interfaces__rosidl_generator_c\n'}
+[7.601824] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.602413] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.610840] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.611380] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.612450] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.613266] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.633557] (-) TimerEvent: {}
+[7.734087] (-) TimerEvent: {}
+[7.834629] (-) TimerEvent: {}
+[7.935087] (-) TimerEvent: {}
+[8.035592] (-) TimerEvent: {}
+[8.136131] (-) TimerEvent: {}
+[8.236559] (-) TimerEvent: {}
+[8.337085] (-) TimerEvent: {}
+[8.437594] (-) TimerEvent: {}
+[8.469427] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/octomap_operations_interfaces/srv/focus_point__type_support.cpp.o\x1b[0m\n'}
+[8.471648] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/octomap_operations_interfaces/srv/view_evaluate__type_support.cpp.o\x1b[0m\n'}
+[8.474969] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/octomap_operations_interfaces/srv/octomap_data__type_support.cpp.o\x1b[0m\n'}
+[8.475572] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/octomap_operations_interfaces/srv/stop_octomap_update__type_support.cpp.o\x1b[0m\n'}
+[8.537717] (-) TimerEvent: {}
+[8.586532] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/octomap_data__type_support.cpp.o\x1b[0m\n'}
+[8.587172] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/focus_point__type_support.cpp.o\x1b[0m\n'}
+[8.588141] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/view_evaluate__type_support.cpp.o\x1b[0m\n'}
+[8.592957] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/octomap_operations_interfaces/srv/stop_octomap_update__type_support.cpp.o\x1b[0m\n'}
+[8.609126] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library liboctomap_operations_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.640855] (-) TimerEvent: {}
+[8.741523] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/octomap_operations_interfaces/srv/detail/dds_fastrtps/octomap_data__type_support.cpp.o\x1b[0m\n'}
+[8.741937] (-) TimerEvent: {}
+[8.743274] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/octomap_operations_interfaces/srv/detail/dds_fastrtps/stop_octomap_update__type_support.cpp.o\x1b[0m\n'}
+[8.747122] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 51%] Built target octomap_operations_interfaces__rosidl_typesupport_c\n'}
+[8.749967] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/octomap_operations_interfaces/srv/detail/dds_fastrtps/focus_point__type_support.cpp.o\x1b[0m\n'}
+[8.755508] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/octomap_operations_interfaces/srv/detail/dds_fastrtps/view_evaluate__type_support.cpp.o\x1b[0m\n'}
+[8.843874] (-) TimerEvent: {}
+[8.928954] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/octomap_operations_interfaces/srv/detail/focus_point__type_support.cpp.o\x1b[0m\n'}
+[8.944079] (-) TimerEvent: {}
+[8.966533] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/octomap_operations_interfaces/srv/detail/octomap_data__type_support.cpp.o\x1b[0m\n'}
+[8.967129] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/octomap_operations_interfaces/srv/detail/focus_point__type_support.c.o\x1b[0m\n'}
+[9.038969] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/octomap_operations_interfaces/srv/detail/focus_point__type_support_c.cpp.o\x1b[0m\n'}
+[9.044436] (-) TimerEvent: {}
+[9.147365] (-) TimerEvent: {}
+[9.253698] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/octomap_operations_interfaces/srv/detail/octomap_data__type_support.c.o\x1b[0m\n'}
+[9.254323] (-) TimerEvent: {}
+[9.354859] (-) TimerEvent: {}
+[9.455529] (-) TimerEvent: {}
+[9.530087] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.c.o\x1b[0m\n'}
+[9.555904] (-) TimerEvent: {}
+[9.664206] (-) TimerEvent: {}
+[9.669004] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.c.o\x1b[0m\n'}
+[9.764385] (-) TimerEvent: {}
+[9.868485] (-) TimerEvent: {}
+[9.874281] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C shared library liboctomap_operations_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.968658] (-) TimerEvent: {}
+[9.979438] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 67%] Built target octomap_operations_interfaces__rosidl_typesupport_introspection_c\n'}
+[10.005118] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/octomap_operations_interfaces/srv/detail/octomap_data__type_support_c.cpp.o\x1b[0m\n'}
+[10.068828] (-) TimerEvent: {}
+[10.172034] (-) TimerEvent: {}
+[10.272500] (-) TimerEvent: {}
+[10.372968] (-) TimerEvent: {}
+[10.473475] (-) TimerEvent: {}
+[10.505752] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.cpp.o\x1b[0m\n'}
+[10.511317] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.cpp.o\x1b[0m\n'}
+[10.522300] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support_c.cpp.o\x1b[0m\n'}
+[10.574030] (-) TimerEvent: {}
+[10.674993] (-) TimerEvent: {}
+[10.705885] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library liboctomap_operations_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.756057] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/octomap_operations_interfaces/srv/detail/view_evaluate__type_support_c.cpp.o\x1b[0m\n'}
+[10.775139] (-) TimerEvent: {}
+[10.877985] (-) TimerEvent: {}
+[10.944966] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 76%] Built target octomap_operations_interfaces__rosidl_typesupport_cpp\n'}
+[10.978159] (-) TimerEvent: {}
+[11.078721] (-) TimerEvent: {}
+[11.179350] (-) TimerEvent: {}
+[11.280004] (-) TimerEvent: {}
+[11.380539] (-) TimerEvent: {}
+[11.482073] (-) TimerEvent: {}
+[11.545904] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library liboctomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.582428] (-) TimerEvent: {}
+[11.683230] (-) TimerEvent: {}
+[11.781475] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 78%] Built target octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[11.783312] (-) TimerEvent: {}
+[11.883783] (-) TimerEvent: {}
+[11.971518] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library liboctomap_operations_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.983982] (-) TimerEvent: {}
+[12.084494] (-) TimerEvent: {}
+[12.133438] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 79%] Built target octomap_operations_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[12.184688] (-) TimerEvent: {}
+[12.210521] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library liboctomap_operations_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.284878] (-) TimerEvent: {}
+[12.307477] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 81%] Built target octomap_operations_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[12.336243] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 81%] Built target octomap_operations_interfaces\n'}
+[12.381390] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.385031] (-) TimerEvent: {}
+[12.485666] (-) TimerEvent: {}
+[12.586347] (-) TimerEvent: {}
+[12.687297] (-) TimerEvent: {}
+[12.787705] (-) TimerEvent: {}
+[12.888139] (-) TimerEvent: {}
+[12.988758] (-) TimerEvent: {}
+[13.089596] (-) TimerEvent: {}
+[13.190940] (-) TimerEvent: {}
+[13.291270] (-) TimerEvent: {}
+[13.392221] (-) TimerEvent: {}
+[13.492981] (-) TimerEvent: {}
+[13.593546] (-) TimerEvent: {}
+[13.604186] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 82%] Built target octomap_operations_interfaces__py\n'}
+[13.651213] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_py.dir/rosidl_generator_py/octomap_operations_interfaces/srv/_focus_point_s.c.o\x1b[0m\n'}
+[13.652017] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_py.dir/rosidl_generator_py/octomap_operations_interfaces/srv/_octomap_data_s.c.o\x1b[0m\n'}
+[13.652185] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_py.dir/rosidl_generator_py/octomap_operations_interfaces/srv/_stop_octomap_update_s.c.o\x1b[0m\n'}
+[13.652665] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces__rosidl_generator_py.dir/rosidl_generator_py/octomap_operations_interfaces/srv/_view_evaluate_s.c.o\x1b[0m\n'}
+[13.693732] (-) TimerEvent: {}
+[13.794233] (-) TimerEvent: {}
+[13.894750] (-) TimerEvent: {}
+[13.995201] (-) TimerEvent: {}
+[14.062892] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library liboctomap_operations_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[14.095369] (-) TimerEvent: {}
+[14.134204] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 90%] Built target octomap_operations_interfaces__rosidl_generator_py\n'}
+[14.170474] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/octomap_operations_interfaces/_octomap_operations_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.178039] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/octomap_operations_interfaces/_octomap_operations_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.180436] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/octomap_operations_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/octomap_operations_interfaces/_octomap_operations_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.195571] (-) TimerEvent: {}
+[14.296026] (-) TimerEvent: {}
+[14.396576] (-) TimerEvent: {}
+[14.410420] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.470934] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.481158] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 98%] Built target octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[14.496691] (-) TimerEvent: {}
+[14.541873] (octomap_operations_interfaces) StdoutLine: {'line': b'[ 98%] Built target octomap_operations_interfaces_s__rosidl_typesupport_c\n'}
+[14.549627] (octomap_operations_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.596909] (-) TimerEvent: {}
+[14.617952] (octomap_operations_interfaces) StdoutLine: {'line': b'[100%] Built target octomap_operations_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[14.630408] (octomap_operations_interfaces) CommandEnded: {'returncode': 0}
+[14.631408] (octomap_operations_interfaces) JobProgress: {'identifier': 'octomap_operations_interfaces', 'progress': 'install'}
+[14.650717] (octomap_operations_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces'], 'cwd': '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy'}), 'shell': False}
+[14.669085] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.669548] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/ament_index/resource_index/rosidl_interfaces/octomap_operations_interfaces\n'}
+[14.669816] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/FocusPoint.json\n'}
+[14.670179] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/OctomapData.json\n'}
+[14.670475] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/StopOctomapUpdate.json\n'}
+[14.670728] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/ViewEvaluate.json\n'}
+[14.670951] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces\n'}
+[14.671351] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg\n'}
+[14.671632] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.671879] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv\n'}
+[14.672099] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/focus_point.h\n'}
+[14.672368] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/stop_octomap_update.h\n'}
+[14.672573] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/octomap_data.h\n'}
+[14.672754] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/view_evaluate.h\n'}
+[14.672971] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail\n'}
+[14.673184] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__functions.h\n'}
+[14.673417] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__functions.h\n'}
+[14.673626] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__struct.h\n'}
+[14.673851] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__functions.h\n'}
+[14.674074] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.h\n'}
+[14.674276] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__struct.h\n'}
+[14.674458] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__type_support.h\n'}
+[14.674692] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__functions.c\n'}
+[14.674932] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__description.c\n'}
+[14.675157] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__functions.c\n'}
+[14.675369] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__struct.h\n'}
+[14.675574] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__type_support.c\n'}
+[14.675787] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.h\n'}
+[14.676004] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__description.c\n'}
+[14.676210] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__description.c\n'}
+[14.676442] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__type_support.c\n'}
+[14.676622] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__description.c\n'}
+[14.676846] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.c\n'}
+[14.677069] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.c\n'}
+[14.677277] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__type_support.h\n'}
+[14.677452] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__functions.c\n'}
+[14.677662] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__functions.c\n'}
+[14.677888] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__functions.h\n'}
+[14.678083] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__struct.h\n'}
+[14.678310] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/library_path.sh\n'}
+[14.678483] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/library_path.dsv\n'}
+[14.678658] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_generator_c.so\n'}
+[14.679084] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_generator_c.so" to ""\n'}
+[14.679319] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces\n'}
+[14.679524] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg\n'}
+[14.679782] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.679999] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv\n'}
+[14.680212] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail\n'}
+[14.680392] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__rosidl_typesupport_fastrtps_c.h\n'}
+[14.680599] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__rosidl_typesupport_fastrtps_c.h\n'}
+[14.680786] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__rosidl_typesupport_fastrtps_c.h\n'}
+[14.680976] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__rosidl_typesupport_fastrtps_c.h\n'}
+[14.681182] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[14.681500] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.681864] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces\n'}
+[14.682108] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg\n'}
+[14.682316] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.682543] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv\n'}
+[14.682752] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/octomap_data.hpp\n'}
+[14.683022] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/focus_point.hpp\n'}
+[14.683212] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/view_evaluate.hpp\n'}
+[14.683431] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/stop_octomap_update.hpp\n'}
+[14.683661] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail\n'}
+[14.683868] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__struct.hpp\n'}
+[14.684105] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__traits.hpp\n'}
+[14.684313] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__traits.hpp\n'}
+[14.684524] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.hpp\n'}
+[14.684726] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__type_support.hpp\n'}
+[14.684922] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__traits.hpp\n'}
+[14.685154] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__struct.hpp\n'}
+[14.685361] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__struct.hpp\n'}
+[14.685569] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__struct.hpp\n'}
+[14.685787] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__type_support.hpp\n'}
+[14.685996] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__builder.hpp\n'}
+[14.686201] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__builder.hpp\n'}
+[14.686404] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__traits.hpp\n'}
+[14.686623] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.hpp\n'}
+[14.686825] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__builder.hpp\n'}
+[14.687051] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__builder.hpp\n'}
+[14.687303] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces\n'}
+[14.687511] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg\n'}
+[14.687719] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.687918] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv\n'}
+[14.688096] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail\n'}
+[14.688271] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.688445] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.688619] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/dds_fastrtps\n'}
+[14.688838] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.689012] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.689195] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.689442] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.689679] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces\n'}
+[14.689968] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg\n'}
+[14.690196] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.690419] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv\n'}
+[14.690823] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail\n'}
+[14.691088] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__rosidl_typesupport_introspection_c.h\n'}
+[14.691282] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__rosidl_typesupport_introspection_c.h\n'}
+[14.691552] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__rosidl_typesupport_introspection_c.h\n'}
+[14.691801] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__rosidl_typesupport_introspection_c.h\n'}
+[14.691993] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__type_support.c\n'}
+[14.692183] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__type_support.c\n'}
+[14.692425] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.c\n'}
+[14.692620] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.c\n'}
+[14.692810] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[14.693040] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.693263] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_c.so\n'}
+[14.693638] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[14.693927] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces\n'}
+[14.694147] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv\n'}
+[14.694378] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail\n'}
+[14.694576] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__type_support.cpp\n'}
+[14.694829] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__type_support.cpp\n'}
+[14.695095] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__type_support.cpp\n'}
+[14.695289] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/view_evaluate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.695526] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__type_support.cpp\n'}
+[14.695761] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/stop_octomap_update__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.696005] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/focus_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.696200] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/include/octomap_operations_interfaces/octomap_operations_interfaces/srv/detail/octomap_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.696437] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[14.696974] (-) TimerEvent: {}
+[14.698848] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.699410] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_cpp.so\n'}
+[14.700021] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[14.701712] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/pythonpath.sh\n'}
+[14.702098] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/pythonpath.dsv\n'}
+[14.702439] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces-0.0.0-py3.12.egg-info\n'}
+[14.702786] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[14.703153] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[14.703525] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[14.703843] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[14.704082] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces\n'}
+[14.704363] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[14.704622] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/_octomap_operations_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[14.704907] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/_octomap_operations_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.705190] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.705471] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/__init__.py\n'}
+[14.705745] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv\n'}
+[14.705996] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_stop_octomap_update_s.c\n'}
+[14.706222] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_stop_octomap_update.py\n'}
+[14.706461] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_view_evaluate.py\n'}
+[14.706646] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_focus_point.py\n'}
+[14.706878] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/__init__.py\n'}
+[14.707094] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_focus_point_s.c\n'}
+[14.707299] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_octomap_data.py\n'}
+[14.707504] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_octomap_data_s.c\n'}
+[14.707676] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_view_evaluate_s.c\n'}
+[14.707837] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_c.so\n'}
+[14.707982] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/_octomap_operations_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.789343] (octomap_operations_interfaces) StdoutLine: {'line': b"Listing '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces'...\n"}
+[14.789694] (octomap_operations_interfaces) StdoutLine: {'line': b"Compiling '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/__init__.py'...\n"}
+[14.789904] (octomap_operations_interfaces) StdoutLine: {'line': b"Listing '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv'...\n"}
+[14.790039] (octomap_operations_interfaces) StdoutLine: {'line': b"Compiling '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/__init__.py'...\n"}
+[14.790153] (octomap_operations_interfaces) StdoutLine: {'line': b"Compiling '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_focus_point.py'...\n"}
+[14.790264] (octomap_operations_interfaces) StdoutLine: {'line': b"Compiling '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_octomap_data.py'...\n"}
+[14.790375] (octomap_operations_interfaces) StdoutLine: {'line': b"Compiling '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_stop_octomap_update.py'...\n"}
+[14.790499] (octomap_operations_interfaces) StdoutLine: {'line': b"Compiling '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/srv/_view_evaluate.py'...\n"}
+[14.794885] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.795140] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.795479] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[14.795718] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.795877] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_c.so\n'}
+[14.796273] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages/octomap_operations_interfaces/octomap_operations_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[14.796502] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_generator_py.so\n'}
+[14.796686] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/liboctomap_operations_interfaces__rosidl_generator_py.so" to ""\n'}
+[14.796882] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/FocusPoint.idl\n'}
+[14.797076] (-) TimerEvent: {}
+[14.797233] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/OctomapData.idl\n'}
+[14.797445] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/StopOctomapUpdate.idl\n'}
+[14.797630] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/ViewEvaluate.idl\n'}
+[14.797831] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/FocusPoint.srv\n'}
+[14.798045] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/OctomapData.srv\n'}
+[14.798654] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/StopOctomapUpdate.srv\n'}
+[14.799346] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/srv/ViewEvaluate.srv\n'}
+[14.799725] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/ament_index/resource_index/package_run_dependencies/octomap_operations_interfaces\n'}
+[14.799958] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/ament_index/resource_index/parent_prefix_path/octomap_operations_interfaces\n'}
+[14.800125] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/ament_prefix_path.sh\n'}
+[14.800288] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/ament_prefix_path.dsv\n'}
+[14.800412] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/path.sh\n'}
+[14.800494] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/environment/path.dsv\n'}
+[14.800573] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/local_setup.bash\n'}
+[14.800659] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/local_setup.sh\n'}
+[14.800738] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/local_setup.zsh\n'}
+[14.800832] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/local_setup.dsv\n'}
+[14.800912] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/package.dsv\n'}
+[14.800993] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/ament_index/resource_index/packages/octomap_operations_interfaces\n'}
+[14.801076] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_generator_cExport.cmake\n'}
+[14.801159] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.801244] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.801323] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.801405] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_generator_cppExport.cmake\n'}
+[14.801483] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.801564] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.801644] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.801816] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.802115] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[14.802363] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.802480] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.802608] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.802697] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[14.802801] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.802890] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_generator_pyExport.cmake\n'}
+[14.802976] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/export_octomap_operations_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.803063] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[14.803147] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.803228] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.803308] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.803388] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.803467] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.803584] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.803716] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfacesConfig.cmake\n'}
+[14.803804] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake/octomap_operations_interfacesConfig-version.cmake\n'}
+[14.803877] (octomap_operations_interfaces) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/package.xml\n'}
+[14.807500] (octomap_operations_interfaces) CommandEnded: {'returncode': 0}
+[14.852806] (octomap_operations_interfaces) JobEnded: {'identifier': 'octomap_operations_interfaces', 'rc': 0}
+[14.853931] (nbv_planner) JobStarted: {'identifier': 'nbv_planner'}
+[14.863164] (octomap_operations) JobStarted: {'identifier': 'octomap_operations'}
+[14.897227] (-) TimerEvent: {}
+[14.997643] (-) TimerEvent: {}
+[15.098091] (-) TimerEvent: {}
+[15.198543] (-) TimerEvent: {}
+[15.212709] (octomap_operations) JobProgress: {'identifier': 'octomap_operations', 'progress': 'cmake'}
+[15.213757] (octomap_operations) Command: {'cmd': ['/usr/bin/cmake', '/home/laptop13/ros2_nbv_ws/src/octomap_operations', '-DCMAKE_INSTALL_PREFIX=/home/laptop13/ros2_nbv_ws/install/octomap_operations'], 'cwd': '/home/laptop13/ros2_nbv_ws/build/octomap_operations', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/octomap_operations', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy'}), 'shell': False}
+[15.298723] (-) TimerEvent: {}
+[15.307569] (octomap_operations) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[15.398859] (-) TimerEvent: {}
+[15.408499] (octomap_operations) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[15.430092] (octomap_operations) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.499073] (-) TimerEvent: {}
+[15.599982] (-) TimerEvent: {}
+[15.626764] (octomap_operations) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[15.643501] (octomap_operations) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[15.644224] (octomap_operations) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[15.644686] (octomap_operations) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[15.664993] (octomap_operations) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.700134] (-) TimerEvent: {}
+[15.800819] (-) TimerEvent: {}
+[15.890364] (octomap_operations) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.900916] (-) TimerEvent: {}
+[15.918513] (octomap_operations) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.919485] (octomap_operations) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.920801] (octomap_operations) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.929099] (octomap_operations) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[16.001030] (-) TimerEvent: {}
+[16.101393] (-) TimerEvent: {}
+[16.201962] (-) TimerEvent: {}
+[16.239509] (octomap_operations) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[16.302189] (-) TimerEvent: {}
+[16.402913] (-) TimerEvent: {}
+[16.483059] (octomap_operations) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[16.503142] (-) TimerEvent: {}
+[16.535480] (nbv_planner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/nbv_planner', 'build', '--build-base', '/home/laptop13/ros2_nbv_ws/build/nbv_planner/build', 'install', '--record', '/home/laptop13/ros2_nbv_ws/build/nbv_planner/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/laptop13/ros2_nbv_ws/src/nbv_planner', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/nbv_planner', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/laptop13/ros2_nbv_ws/build/nbv_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages:/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04'}, 'shell': False}
+[16.584167] (octomap_operations) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[16.603261] (-) TimerEvent: {}
+[16.612707] (octomap_operations) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[16.651930] (octomap_operations) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[16.690656] (octomap_operations) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[16.703519] (-) TimerEvent: {}
+[16.804019] (-) TimerEvent: {}
+[16.866026] (octomap_operations) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[16.875781] (octomap_operations) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[16.904165] (-) TimerEvent: {}
+[16.966602] (nbv_planner) StdoutLine: {'line': b'running egg_info\n'}
+[16.967502] (nbv_planner) StdoutLine: {'line': b'creating ../../build/nbv_planner/nbv_planner.egg-info\n'}
+[16.997051] (nbv_planner) StdoutLine: {'line': b'writing ../../build/nbv_planner/nbv_planner.egg-info/PKG-INFO\n'}
+[16.997585] (nbv_planner) StdoutLine: {'line': b'writing dependency_links to ../../build/nbv_planner/nbv_planner.egg-info/dependency_links.txt\n'}
+[16.998337] (nbv_planner) StdoutLine: {'line': b'writing entry points to ../../build/nbv_planner/nbv_planner.egg-info/entry_points.txt\n'}
+[16.999051] (nbv_planner) StdoutLine: {'line': b'writing requirements to ../../build/nbv_planner/nbv_planner.egg-info/requires.txt\n'}
+[16.999349] (nbv_planner) StdoutLine: {'line': b'writing top-level names to ../../build/nbv_planner/nbv_planner.egg-info/top_level.txt\n'}
+[16.999611] (nbv_planner) StdoutLine: {'line': b"writing manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'\n"}
+[17.004254] (-) TimerEvent: {}
+[17.054458] (octomap_operations) StdoutLine: {'line': b'-- Found OpenSSL: /home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04/libcrypto.so (found version "3.0.13")  \n'}
+[17.088995] (octomap_operations) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[17.099336] (nbv_planner) StdoutLine: {'line': b"reading manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'\n"}
+[17.102852] (nbv_planner) StdoutLine: {'line': b"writing manifest file '../../build/nbv_planner/nbv_planner.egg-info/SOURCES.txt'\n"}
+[17.105483] (-) TimerEvent: {}
+[17.105850] (nbv_planner) StdoutLine: {'line': b'running build\n'}
+[17.106590] (nbv_planner) StdoutLine: {'line': b'running build_py\n'}
+[17.107077] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build\n'}
+[17.107622] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib\n'}
+[17.108305] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner\n'}
+[17.108591] (nbv_planner) StdoutLine: {'line': b'copying nbv_planner/nbv_planner_node.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner\n'}
+[17.108969] (nbv_planner) StdoutLine: {'line': b'copying nbv_planner/__init__.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner\n'}
+[17.109210] (nbv_planner) StdoutLine: {'line': b'copying nbv_planner/test_candidate_views.py -> /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner\n'}
+[17.109440] (nbv_planner) StdoutLine: {'line': b'running install\n'}
+[17.122553] (nbv_planner) StdoutLine: {'line': b'running install_lib\n'}
+[17.140194] (octomap_operations) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.186081] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner\n'}
+[17.186484] (nbv_planner) StdoutLine: {'line': b'copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/nbv_planner_node.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner\n'}
+[17.186911] (nbv_planner) StdoutLine: {'line': b'copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/__init__.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner\n'}
+[17.187165] (nbv_planner) StdoutLine: {'line': b'copying /home/laptop13/ros2_nbv_ws/build/nbv_planner/build/lib/nbv_planner/test_candidate_views.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner\n'}
+[17.188078] (nbv_planner) StdoutLine: {'line': b'byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/nbv_planner_node.py to nbv_planner_node.cpython-312.pyc\n'}
+[17.200282] (nbv_planner) StdoutLine: {'line': b'byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/__init__.py to __init__.cpython-312.pyc\n'}
+[17.200900] (nbv_planner) StdoutLine: {'line': b'byte-compiling /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner/test_candidate_views.py to test_candidate_views.cpython-312.pyc\n'}
+[17.205707] (-) TimerEvent: {}
+[17.209871] (nbv_planner) StdoutLine: {'line': b'running install_data\n'}
+[17.210628] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index\n'}
+[17.210923] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index\n'}
+[17.211467] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index/packages\n'}
+[17.211821] (nbv_planner) StdoutLine: {'line': b'copying resource/nbv_planner -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/ament_index/resource_index/packages\n'}
+[17.212106] (nbv_planner) StdoutLine: {'line': b'copying package.xml -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner\n'}
+[17.212461] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch\n'}
+[17.212732] (nbv_planner) StdoutLine: {'line': b'copying launch/nbv_planner_launch.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch\n'}
+[17.213129] (nbv_planner) StdoutLine: {'line': b'copying launch/test_candidate_launch.py -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/launch\n'}
+[17.213684] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/candidate_views\n'}
+[17.214261] (nbv_planner) StdoutLine: {'line': b'copying candidate_views/candidate_views_200.txt -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/candidate_views\n'}
+[17.215035] (nbv_planner) StdoutLine: {'line': b'creating /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/rviz\n'}
+[17.215607] (nbv_planner) StdoutLine: {'line': b'copying rviz/reconstruction_rviz.rviz -> /home/laptop13/ros2_nbv_ws/install/nbv_planner/share/nbv_planner/rviz\n'}
+[17.216257] (nbv_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.239222] (nbv_planner) StdoutLine: {'line': b'Copying ../../build/nbv_planner/nbv_planner.egg-info to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/python3.12/site-packages/nbv_planner-0.0.0-py3.12.egg-info\n'}
+[17.240155] (nbv_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[17.305994] (-) TimerEvent: {}
+[17.309584] (octomap_operations) StdoutLine: {'line': b'-- Found octomap_msgs: 2.0.1 (/opt/ros/jazzy/share/octomap_msgs/cmake)\n'}
+[17.401580] (octomap_operations) StdoutLine: {'line': b'-- Found octomap_operations_interfaces: 0.0.0 (/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake)\n'}
+[17.406157] (-) TimerEvent: {}
+[17.442239] (nbv_planner) StdoutLine: {'line': b'Installing nbv_planner_node script to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/nbv_planner\n'}
+[17.442701] (nbv_planner) StdoutLine: {'line': b'Installing test_candidate_views script to /home/laptop13/ros2_nbv_ws/install/nbv_planner/lib/nbv_planner\n'}
+[17.443232] (nbv_planner) StdoutLine: {'line': b"writing list of installed files to '/home/laptop13/ros2_nbv_ws/build/nbv_planner/install.log'\n"}
+[17.452983] (octomap_operations) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[17.501610] (nbv_planner) CommandEnded: {'returncode': 0}
+[17.506468] (-) TimerEvent: {}
+[17.517285] (nbv_planner) JobEnded: {'identifier': 'nbv_planner', 'rc': 0}
+[17.594429] (octomap_operations) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[17.606636] (-) TimerEvent: {}
+[17.707082] (-) TimerEvent: {}
+[17.783808] (octomap_operations) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[17.784340] (octomap_operations) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/laptop13/ros2_nbv_ws/src/octomap_operations/src>\n'}
+[17.784509] (octomap_operations) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[17.785964] (octomap_operations) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[17.786197] (octomap_operations) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[17.787738] (octomap_operations) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.789151] (octomap_operations) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[17.791725] (octomap_operations) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[17.791986] (octomap_operations) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[17.793257] (octomap_operations) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[17.796261] (octomap_operations) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[17.807238] (-) TimerEvent: {}
+[17.824423] (octomap_operations) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[17.827361] (octomap_operations) StdoutLine: {'line': b'-- Build files have been written to: /home/laptop13/ros2_nbv_ws/build/octomap_operations\n'}
+[17.838359] (octomap_operations) CommandEnded: {'returncode': 0}
+[17.839692] (octomap_operations) JobProgress: {'identifier': 'octomap_operations', 'progress': 'build'}
+[17.840072] (octomap_operations) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/laptop13/ros2_nbv_ws/build/octomap_operations', '--', '-j12', '-l12'], 'cwd': '/home/laptop13/ros2_nbv_ws/build/octomap_operations', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/octomap_operations', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy'}), 'shell': False}
+[17.907399] (-) TimerEvent: {}
+[17.945632] (octomap_operations) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/octomap_operations_node.cpp.o\x1b[0m\n'}
+[17.946155] (octomap_operations) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/octomap_operations_main.cpp.o\x1b[0m\n'}
+[17.946435] (octomap_operations) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/operations_utils.cpp.o\x1b[0m\n'}
+[17.946850] (octomap_operations) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/ig_calculation_methods.cpp.o\x1b[0m\n'}
+[17.947621] (octomap_operations) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/focus_point_calculation.cpp.o\x1b[0m\n'}
+[18.007592] (-) TimerEvent: {}
+[18.108117] (-) TimerEvent: {}
+[18.208654] (-) TimerEvent: {}
+[18.309242] (-) TimerEvent: {}
+[18.412133] (-) TimerEvent: {}
+[18.512661] (-) TimerEvent: {}
+[18.613350] (-) TimerEvent: {}
+[18.714286] (-) TimerEvent: {}
+[18.814876] (-) TimerEvent: {}
+[18.915416] (-) TimerEvent: {}
+[19.015979] (-) TimerEvent: {}
+[19.116527] (-) TimerEvent: {}
+[19.217077] (-) TimerEvent: {}
+[19.318069] (-) TimerEvent: {}
+[19.418938] (-) TimerEvent: {}
+[19.519480] (-) TimerEvent: {}
+[19.622171] (-) TimerEvent: {}
+[19.723908] (-) TimerEvent: {}
+[19.824526] (-) TimerEvent: {}
+[19.925067] (-) TimerEvent: {}
+[20.025581] (-) TimerEvent: {}
+[20.126132] (-) TimerEvent: {}
+[20.226952] (-) TimerEvent: {}
+[20.328059] (-) TimerEvent: {}
+[20.428851] (-) TimerEvent: {}
+[20.529597] (-) TimerEvent: {}
+[20.630202] (-) TimerEvent: {}
+[20.730706] (-) TimerEvent: {}
+[20.831181] (-) TimerEvent: {}
+[20.931831] (-) TimerEvent: {}
+[21.032511] (-) TimerEvent: {}
+[21.133369] (-) TimerEvent: {}
+[21.234219] (-) TimerEvent: {}
+[21.334978] (-) TimerEvent: {}
+[21.435495] (-) TimerEvent: {}
+[21.536124] (-) TimerEvent: {}
+[21.636729] (-) TimerEvent: {}
+[21.737368] (-) TimerEvent: {}
+[21.838198] (-) TimerEvent: {}
+[21.938889] (-) TimerEvent: {}
+[22.039847] (-) TimerEvent: {}
+[22.140476] (-) TimerEvent: {}
+[22.242029] (-) TimerEvent: {}
+[22.344937] (-) TimerEvent: {}
+[22.445562] (-) TimerEvent: {}
+[22.546280] (-) TimerEvent: {}
+[22.647421] (-) TimerEvent: {}
+[22.748294] (-) TimerEvent: {}
+[22.848756] (-) TimerEvent: {}
+[22.949329] (-) TimerEvent: {}
+[23.050123] (-) TimerEvent: {}
+[23.150548] (-) TimerEvent: {}
+[23.251003] (-) TimerEvent: {}
+[23.351470] (-) TimerEvent: {}
+[23.452034] (-) TimerEvent: {}
+[23.552985] (-) TimerEvent: {}
+[23.653449] (-) TimerEvent: {}
+[23.753892] (-) TimerEvent: {}
+[23.854391] (-) TimerEvent: {}
+[23.954877] (-) TimerEvent: {}
+[24.055321] (-) TimerEvent: {}
+[24.155902] (-) TimerEvent: {}
+[24.256962] (-) TimerEvent: {}
+[24.357741] (-) TimerEvent: {}
+[24.458821] (-) TimerEvent: {}
+[24.559432] (-) TimerEvent: {}
+[24.660364] (-) TimerEvent: {}
+[24.761290] (-) TimerEvent: {}
+[24.836725] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector3d octomap_operations::OctomapOperations::\x1b[01;32m\x1b[Kget_focus_point\x1b[m\x1b[K(std::vector<float>&, std::shared_ptr<octomap::OcTree>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.837450] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:37:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kfound_endpoint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.837763] (octomap_operations) StderrLine: {'line': b'   37 |       bool \x1b[01;35m\x1b[Kfound_endpoint\x1b[m\x1b[K = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells\n'}
+[24.838082] (octomap_operations) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.838342] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:19:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kr_ray_cast\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.838642] (octomap_operations) StderrLine: {'line': b'   19 |   double \x1b[01;35m\x1b[Kr_ray_cast\x1b[m\x1b[K=raycast_r_max_;\n'}
+[24.838923] (octomap_operations) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.861520] (-) TimerEvent: {}
+[24.962162] (-) TimerEvent: {}
+[25.062630] (-) TimerEvent: {}
+[25.163255] (-) TimerEvent: {}
+[25.264187] (-) TimerEvent: {}
+[25.364814] (-) TimerEvent: {}
+[25.465919] (-) TimerEvent: {}
+[25.569497] (-) TimerEvent: {}
+[25.670668] (-) TimerEvent: {}
+[25.771673] (-) TimerEvent: {}
+[25.872845] (-) TimerEvent: {}
+[25.973900] (-) TimerEvent: {}
+[26.074855] (-) TimerEvent: {}
+[26.175811] (-) TimerEvent: {}
+[26.276381] (-) TimerEvent: {}
+[26.376947] (-) TimerEvent: {}
+[26.477590] (-) TimerEvent: {}
+[26.578353] (-) TimerEvent: {}
+[26.678925] (-) TimerEvent: {}
+[26.779488] (-) TimerEvent: {}
+[26.880072] (-) TimerEvent: {}
+[26.980655] (-) TimerEvent: {}
+[27.081155] (-) TimerEvent: {}
+[27.181750] (-) TimerEvent: {}
+[27.282507] (-) TimerEvent: {}
+[27.383060] (-) TimerEvent: {}
+[27.483763] (-) TimerEvent: {}
+[27.584222] (-) TimerEvent: {}
+[27.684732] (-) TimerEvent: {}
+[27.785240] (-) TimerEvent: {}
+[27.885741] (-) TimerEvent: {}
+[27.935092] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/ig_calculation_methods.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble octomap_operations::OctomapOperations::\x1b[01;32m\x1b[Kget_view_ig_ent\x1b[m\x1b[K(std::vector<float>&, std::shared_ptr<octomap::OcTree>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.935486] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/ig_calculation_methods.cpp:35:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kfound_endpoint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[27.935683] (octomap_operations) StderrLine: {'line': b'   35 |         bool \x1b[01;35m\x1b[Kfound_endpoint\x1b[m\x1b[K = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells\n'}
+[27.935912] (octomap_operations) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.985956] (-) TimerEvent: {}
+[28.054908] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/octomap_operations_main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid octomap_operations::OctomapOperations::\x1b[01;32m\x1b[Kget_octomap_data\x1b[m\x1b[K(std::shared_ptr<octomap_operations_interfaces::srv::OctomapData_Request_<std::allocator<void> > >, std::shared_ptr<octomap_operations_interfaces::srv::OctomapData_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.055317] (octomap_operations) StderrLine: {'line': b'\x1b[01m\x1b[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/octomap_operations_main.cpp:299:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kcomp_prob\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[28.055594] (octomap_operations) StderrLine: {'line': b'  299 |   double \x1b[01;35m\x1b[Kcomp_prob\x1b[m\x1b[K;\n'}
+[28.055891] (octomap_operations) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[28.086100] (-) TimerEvent: {}
+[28.186733] (-) TimerEvent: {}
+[28.287531] (-) TimerEvent: {}
+[28.388075] (-) TimerEvent: {}
+[28.488704] (-) TimerEvent: {}
+[28.589542] (-) TimerEvent: {}
+[28.690169] (-) TimerEvent: {}
+[28.790860] (-) TimerEvent: {}
+[28.891566] (-) TimerEvent: {}
+[28.992213] (-) TimerEvent: {}
+[29.092699] (-) TimerEvent: {}
+[29.193225] (-) TimerEvent: {}
+[29.293717] (-) TimerEvent: {}
+[29.394178] (-) TimerEvent: {}
+[29.494810] (-) TimerEvent: {}
+[29.595650] (-) TimerEvent: {}
+[29.696243] (-) TimerEvent: {}
+[29.796662] (-) TimerEvent: {}
+[29.897551] (-) TimerEvent: {}
+[29.998213] (-) TimerEvent: {}
+[30.098623] (-) TimerEvent: {}
+[30.199042] (-) TimerEvent: {}
+[30.299534] (-) TimerEvent: {}
+[30.400157] (-) TimerEvent: {}
+[30.500615] (-) TimerEvent: {}
+[30.601166] (-) TimerEvent: {}
+[30.701764] (-) TimerEvent: {}
+[30.802294] (-) TimerEvent: {}
+[30.902999] (-) TimerEvent: {}
+[31.004027] (-) TimerEvent: {}
+[31.104816] (-) TimerEvent: {}
+[31.205444] (-) TimerEvent: {}
+[31.305972] (-) TimerEvent: {}
+[31.406391] (-) TimerEvent: {}
+[31.506981] (-) TimerEvent: {}
+[31.607525] (-) TimerEvent: {}
+[31.708027] (-) TimerEvent: {}
+[31.808536] (-) TimerEvent: {}
+[31.908873] (-) TimerEvent: {}
+[32.009463] (-) TimerEvent: {}
+[32.109874] (-) TimerEvent: {}
+[32.210452] (-) TimerEvent: {}
+[32.310937] (-) TimerEvent: {}
+[32.411527] (-) TimerEvent: {}
+[32.512366] (-) TimerEvent: {}
+[32.613026] (-) TimerEvent: {}
+[32.713502] (-) TimerEvent: {}
+[32.814103] (-) TimerEvent: {}
+[32.914572] (-) TimerEvent: {}
+[33.015033] (-) TimerEvent: {}
+[33.115576] (-) TimerEvent: {}
+[33.216500] (-) TimerEvent: {}
+[33.317068] (-) TimerEvent: {}
+[33.417623] (-) TimerEvent: {}
+[33.518528] (-) TimerEvent: {}
+[33.619032] (-) TimerEvent: {}
+[33.719378] (-) TimerEvent: {}
+[33.819797] (-) TimerEvent: {}
+[33.920287] (-) TimerEvent: {}
+[34.020709] (-) TimerEvent: {}
+[34.121202] (-) TimerEvent: {}
+[34.221677] (-) TimerEvent: {}
+[34.322310] (-) TimerEvent: {}
+[34.422814] (-) TimerEvent: {}
+[34.523159] (-) TimerEvent: {}
+[34.623652] (-) TimerEvent: {}
+[34.724025] (-) TimerEvent: {}
+[34.824587] (-) TimerEvent: {}
+[34.925179] (-) TimerEvent: {}
+[35.025755] (-) TimerEvent: {}
+[35.126227] (-) TimerEvent: {}
+[35.226780] (-) TimerEvent: {}
+[35.327205] (-) TimerEvent: {}
+[35.427719] (-) TimerEvent: {}
+[35.528282] (-) TimerEvent: {}
+[35.628800] (-) TimerEvent: {}
+[35.729164] (-) TimerEvent: {}
+[35.829513] (-) TimerEvent: {}
+[35.929951] (-) TimerEvent: {}
+[36.030471] (-) TimerEvent: {}
+[36.131281] (-) TimerEvent: {}
+[36.231725] (-) TimerEvent: {}
+[36.332447] (-) TimerEvent: {}
+[36.433219] (-) TimerEvent: {}
+[36.533850] (-) TimerEvent: {}
+[36.634232] (-) TimerEvent: {}
+[36.734740] (-) TimerEvent: {}
+[36.835445] (-) TimerEvent: {}
+[36.935889] (-) TimerEvent: {}
+[37.036393] (-) TimerEvent: {}
+[37.136868] (-) TimerEvent: {}
+[37.237288] (-) TimerEvent: {}
+[37.337707] (-) TimerEvent: {}
+[37.438194] (-) TimerEvent: {}
+[37.538724] (-) TimerEvent: {}
+[37.639148] (-) TimerEvent: {}
+[37.739546] (-) TimerEvent: {}
+[37.840114] (-) TimerEvent: {}
+[37.940997] (-) TimerEvent: {}
+[38.041669] (-) TimerEvent: {}
+[38.142342] (-) TimerEvent: {}
+[38.242806] (-) TimerEvent: {}
+[38.343225] (-) TimerEvent: {}
+[38.443656] (-) TimerEvent: {}
+[38.544171] (-) TimerEvent: {}
+[38.644750] (-) TimerEvent: {}
+[38.745368] (-) TimerEvent: {}
+[38.845938] (-) TimerEvent: {}
+[38.946479] (-) TimerEvent: {}
+[39.047058] (-) TimerEvent: {}
+[39.147736] (-) TimerEvent: {}
+[39.248459] (-) TimerEvent: {}
+[39.349024] (-) TimerEvent: {}
+[39.449425] (-) TimerEvent: {}
+[39.549905] (-) TimerEvent: {}
+[39.650386] (-) TimerEvent: {}
+[39.750969] (-) TimerEvent: {}
+[39.851377] (-) TimerEvent: {}
+[39.951940] (-) TimerEvent: {}
+[40.052315] (-) TimerEvent: {}
+[40.153032] (-) TimerEvent: {}
+[40.253861] (-) TimerEvent: {}
+[40.354327] (-) TimerEvent: {}
+[40.454833] (-) TimerEvent: {}
+[40.555327] (-) TimerEvent: {}
+[40.655918] (-) TimerEvent: {}
+[40.756310] (-) TimerEvent: {}
+[40.856751] (-) TimerEvent: {}
+[40.957896] (-) TimerEvent: {}
+[41.059199] (-) TimerEvent: {}
+[41.159957] (-) TimerEvent: {}
+[41.260872] (-) TimerEvent: {}
+[41.361363] (-) TimerEvent: {}
+[41.461806] (-) TimerEvent: {}
+[41.562167] (-) TimerEvent: {}
+[41.662476] (-) TimerEvent: {}
+[41.762792] (-) TimerEvent: {}
+[41.863109] (-) TimerEvent: {}
+[41.964838] (-) TimerEvent: {}
+[42.065160] (-) TimerEvent: {}
+[42.147245] (octomap_operations) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable octomap_operations_node\x1b[0m\n'}
+[42.165331] (-) TimerEvent: {}
+[42.265965] (-) TimerEvent: {}
+[42.366292] (-) TimerEvent: {}
+[42.466648] (-) TimerEvent: {}
+[42.566972] (-) TimerEvent: {}
+[42.667485] (-) TimerEvent: {}
+[42.721197] (octomap_operations) StdoutLine: {'line': b'[100%] Built target octomap_operations_node\n'}
+[42.739535] (octomap_operations) CommandEnded: {'returncode': 0}
+[42.740681] (octomap_operations) JobProgress: {'identifier': 'octomap_operations', 'progress': 'install'}
+[42.741504] (octomap_operations) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/laptop13/ros2_nbv_ws/build/octomap_operations'], 'cwd': '/home/laptop13/ros2_nbv_ws/build/octomap_operations', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'laptop13', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CoppeliaSim_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'HOME': '/home/laptop13', 'OLDPWD': '/home/laptop13', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2688', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORM_PLUGIN_PATH': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'laptop13', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'laptop13', 'TERM': 'xterm-256color', 'COPPELIASIM_ROOT_DIR': '/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:@/tmp/.ICE-unix/2644,unix/laptop13-HP-EliteBook-640-14-inch-G10-Notebook-PC:/tmp/.ICE-unix/2644', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1e43b99_ae5d_46f5_aee0_be42a3b457ba', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1B8ML3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.222', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/laptop13/ros2_nbv_ws/build/octomap_operations', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy'}), 'shell': False}
+[42.754598] (octomap_operations) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.754940] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/lib/octomap_operations/octomap_operations_node\n'}
+[42.760737] (octomap_operations) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations/lib/octomap_operations/octomap_operations_node" to ""\n'}
+[42.761071] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/launch\n'}
+[42.761280] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/launch/octomap_operations_launch.py\n'}
+[42.761559] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/config\n'}
+[42.762030] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/config/octomap_ops_params.yaml\n'}
+[42.762343] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/ament_index/resource_index/package_run_dependencies/octomap_operations\n'}
+[42.762551] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/ament_index/resource_index/parent_prefix_path/octomap_operations\n'}
+[42.762814] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/ament_prefix_path.sh\n'}
+[42.763022] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/ament_prefix_path.dsv\n'}
+[42.763188] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/path.sh\n'}
+[42.763353] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/path.dsv\n'}
+[42.763540] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.bash\n'}
+[42.763761] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.sh\n'}
+[42.764045] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.zsh\n'}
+[42.764284] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.dsv\n'}
+[42.764526] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/package.dsv\n'}
+[42.764834] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/ament_index/resource_index/packages/octomap_operations\n'}
+[42.765082] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/cmake/octomap_operationsConfig.cmake\n'}
+[42.765315] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/cmake/octomap_operationsConfig-version.cmake\n'}
+[42.765561] (octomap_operations) StdoutLine: {'line': b'-- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/package.xml\n'}
+[42.768748] (octomap_operations) CommandEnded: {'returncode': 0}
+[42.769589] (-) TimerEvent: {}
+[42.780575] (octomap_operations) JobEnded: {'identifier': 'octomap_operations', 'rc': 0}
+[42.781987] (-) EventReactorShutdown: {}

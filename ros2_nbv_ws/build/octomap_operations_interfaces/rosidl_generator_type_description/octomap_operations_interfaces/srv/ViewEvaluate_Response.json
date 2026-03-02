@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "octomap_operations_interfaces/srv/ViewEvaluate_Response",
+      "fields": [
+        {
+          "name": "view_igs",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "elapsed_time",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "octomap_operations_interfaces/srv/ViewEvaluate_Response",
+      "hash_string": "RIHS01_be128f80010942644c2ad6eb6ea0f6646e859c9a37e70ae6c132617ccf25ae42"
+    }
+  ]
+}

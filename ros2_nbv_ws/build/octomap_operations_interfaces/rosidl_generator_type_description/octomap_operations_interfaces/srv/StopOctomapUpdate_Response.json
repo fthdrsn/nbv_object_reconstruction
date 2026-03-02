@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "octomap_operations_interfaces/srv/StopOctomapUpdate_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "octomap_operations_interfaces/srv/StopOctomapUpdate_Response",
+      "hash_string": "RIHS01_1efd65b34eeb05968c3595801c930e4416daa53034b4dec4e1de288973058f58"
+    }
+  ]
+}

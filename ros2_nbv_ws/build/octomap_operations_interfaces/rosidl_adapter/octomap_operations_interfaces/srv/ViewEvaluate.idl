@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from octomap_operations_interfaces/srv/ViewEvaluate.srv
+// generated code does not contain a copyright notice
+
+
+module octomap_operations_interfaces {
+  module srv {
+    struct ViewEvaluate_Request {
+      string ig_method;
+
+      sequence<float> view_list;
+
+      boolean run_parallel;
+    };
+    struct ViewEvaluate_Response {
+      sequence<float> view_igs;
+
+      float elapsed_time;
+    };
+  };
+};

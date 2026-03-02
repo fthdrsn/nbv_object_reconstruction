@@ -1,0 +1,3 @@
+[console_scripts]
+nbv_planner_node = nbv_planner.nbv_planner_node:main
+test_candidate_views = nbv_planner.test_candidate_views:main

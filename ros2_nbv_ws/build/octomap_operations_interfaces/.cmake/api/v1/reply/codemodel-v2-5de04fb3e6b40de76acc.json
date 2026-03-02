@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-559df311318b557b934c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "octomap_operations_interfaces__py",
+					"jsonFile" : "directory-octomap_operations_interfaces__py-d65bf09c5274e594ea66.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/octomap_operations_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "octomap_operations_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_octomap_operations_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_octomap_operations_interfaces_egg-354f0ab3bfa444ef09f2.json",
+					"name" : "ament_cmake_python_build_octomap_operations_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_octomap_operations_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_octomap_operations_interfaces-bd3a4f1e5861fdb6a69e.json",
+					"name" : "ament_cmake_python_copy_octomap_operations_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces-0ba0a4adeb25d95c647b.json",
+					"name" : "octomap_operations_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__cpp-261c0764c4ab9cc4760b.json",
+					"name" : "octomap_operations_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "octomap_operations_interfaces__py::@0a8133616c9118dedde2",
+					"jsonFile" : "target-octomap_operations_interfaces__py-897e06fd2617b5a9ffcf.json",
+					"name" : "octomap_operations_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_generator_c-fd2c01e08a273fa1b37d.json",
+					"name" : "octomap_operations_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_generator_py-5ef1388265a781df76a6.json",
+					"name" : "octomap_operations_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_generator_type_description-6eb59a32dc15fdf52e3a.json",
+					"name" : "octomap_operations_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_typesupport_c-fb8640f1d50f013e069a.json",
+					"name" : "octomap_operations_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_typesupport_cpp-3bda7352b0f695b091ab.json",
+					"name" : "octomap_operations_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_typesupport_fastrtps_c-3c44a2b9d4de7ff55f92.json",
+					"name" : "octomap_operations_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp-64c40bd3dd86dff67cd3.json",
+					"name" : "octomap_operations_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_typesupport_introspection_c-270bca575bf194e9f4fc.json",
+					"name" : "octomap_operations_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces__rosidl_typesupport_introspection_cpp-a4d791c6088e0ca41dc6.json",
+					"name" : "octomap_operations_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces_s__rosidl_typesupport_c-2583954b023bb526a0ca.json",
+					"name" : "octomap_operations_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c-5e5e5b6b319b6805fef9.json",
+					"name" : "octomap_operations_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces_s__rosidl_typesupport_introspection_c-d1fc2a8b3d8e6e48e5ad.json",
+					"name" : "octomap_operations_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_operations_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_operations_interfaces_uninstall-827e77d018406f27e4db.json",
+					"name" : "octomap_operations_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f3c6b2c503c3633a5a05.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces",
+		"source" : "/home/laptop13/ros2_nbv_ws/src/octomap_operations_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

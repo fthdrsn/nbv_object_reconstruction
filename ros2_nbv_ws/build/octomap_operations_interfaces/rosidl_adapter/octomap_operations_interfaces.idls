@@ -1,0 +1,4 @@
+/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/FocusPoint.idl
+/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/OctomapData.idl
+/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/StopOctomapUpdate.idl
+/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/rosidl_adapter/octomap_operations_interfaces:srv/ViewEvaluate.idl

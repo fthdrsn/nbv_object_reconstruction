@@ -1,0 +1,91 @@
+[0.353s] Invoking command in '/home/laptop13/ros2_nbv_ws/build/octomap_operations': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/laptop13/ros2_nbv_ws/src/octomap_operations -DCMAKE_INSTALL_PREFIX=/home/laptop13/ros2_nbv_ws/install/octomap_operations
+[0.445s] -- The C compiler identification is GNU 13.3.0
+[0.546s] -- The CXX compiler identification is GNU 13.3.0
+[0.567s] -- Detecting C compiler ABI info
+[0.764s] -- Detecting C compiler ABI info - done
+[0.781s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.781s] -- Detecting C compile features
+[0.782s] -- Detecting C compile features - done
+[0.803s] -- Detecting CXX compiler ABI info
+[1.028s] -- Detecting CXX compiler ABI info - done
+[1.056s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.056s] -- Detecting CXX compile features
+[1.058s] -- Detecting CXX compile features - done
+[1.066s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.377s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.620s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.721s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.750s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.789s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.828s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.003s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.013s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.192s] -- Found OpenSSL: /home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04/libcrypto.so (found version "3.0.13")  
+[2.226s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.278s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.447s] -- Found octomap_msgs: 2.0.1 (/opt/ros/jazzy/share/octomap_msgs/cmake)
+[2.539s] -- Found octomap_operations_interfaces: 0.0.0 (/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/share/octomap_operations_interfaces/cmake)
+[2.590s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[2.732s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.921s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.921s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/laptop13/ros2_nbv_ws/src/octomap_operations/src>
+[2.921s] -- Configured cppcheck exclude dirs and/or files: 
+[2.923s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.923s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.925s] -- Added test 'lint_cmake' to check CMake code style
+[2.926s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.929s] -- Added test 'uncrustify' to check C / C++ code style
+[2.929s] -- Configured uncrustify additional arguments: 
+[2.930s] -- Added test 'xmllint' to check XML markup files
+[2.933s] -- Configuring done (2.6s)
+[2.961s] -- Generating done (0.0s)
+[2.964s] -- Build files have been written to: /home/laptop13/ros2_nbv_ws/build/octomap_operations
+[2.976s] Invoked command in '/home/laptop13/ros2_nbv_ws/build/octomap_operations' returned '0': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/laptop13/ros2_nbv_ws/src/octomap_operations -DCMAKE_INSTALL_PREFIX=/home/laptop13/ros2_nbv_ws/install/octomap_operations
+[2.977s] Invoking command in '/home/laptop13/ros2_nbv_ws/build/octomap_operations': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/laptop13/ros2_nbv_ws/build/octomap_operations -- -j12 -l12
+[3.083s] [ 16%] [32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/octomap_operations_node.cpp.o[0m
+[3.083s] [ 50%] [32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/octomap_operations_main.cpp.o[0m
+[3.083s] [ 50%] [32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/operations_utils.cpp.o[0m
+[3.084s] [ 66%] [32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/ig_calculation_methods.cpp.o[0m
+[3.085s] [ 83%] [32mBuilding CXX object CMakeFiles/octomap_operations_node.dir/src/focus_point_calculation.cpp.o[0m
+[9.974s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:[m[K In member function ‘[01m[KEigen::Vector3d octomap_operations::OctomapOperations::[01;32m[Kget_focus_point[m[K(std::vector<float>&, std::shared_ptr<octomap::OcTree>&)[m[K’:
+[9.974s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:37:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_endpoint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[9.975s]    37 |       bool [01;35m[Kfound_endpoint[m[K = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells
+[9.975s]       |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[9.975s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:19:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kr_ray_cast[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[9.976s]    19 |   double [01;35m[Kr_ray_cast[m[K=raycast_r_max_;
+[9.976s]       |          [01;35m[K^~~~~~~~~~[m[K
+[13.072s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/ig_calculation_methods.cpp:[m[K In member function ‘[01m[Kdouble octomap_operations::OctomapOperations::[01;32m[Kget_view_ig_ent[m[K(std::vector<float>&, std::shared_ptr<octomap::OcTree>&)[m[K’:
+[13.072s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/ig_calculation_methods.cpp:35:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_endpoint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[13.073s]    35 |         bool [01;35m[Kfound_endpoint[m[K = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells
+[13.073s]       |              [01;35m[K^~~~~~~~~~~~~~[m[K
+[13.192s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/octomap_operations_main.cpp:[m[K In member function ‘[01m[Kvoid octomap_operations::OctomapOperations::[01;32m[Kget_octomap_data[m[K(std::shared_ptr<octomap_operations_interfaces::srv::OctomapData_Request_<std::allocator<void> > >, std::shared_ptr<octomap_operations_interfaces::srv::OctomapData_Response_<std::allocator<void> > >)[m[K’:
+[13.192s] [01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/octomap_operations_main.cpp:299:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcomp_prob[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[13.193s]   299 |   double [01;35m[Kcomp_prob[m[K;
+[13.193s]       |          [01;35m[K^~~~~~~~~[m[K
+[27.284s] [100%] [32m[1mLinking CXX executable octomap_operations_node[0m
+[27.858s] [100%] Built target octomap_operations_node
+[27.877s] Invoked command in '/home/laptop13/ros2_nbv_ws/build/octomap_operations' returned '0': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/laptop13/ros2_nbv_ws/build/octomap_operations -- -j12 -l12
+[27.879s] Invoking command in '/home/laptop13/ros2_nbv_ws/build/octomap_operations': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/laptop13/ros2_nbv_ws/build/octomap_operations
+[27.892s] -- Install configuration: ""
+[27.892s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/lib/octomap_operations/octomap_operations_node
+[27.898s] -- Set non-toolchain portion of runtime path of "/home/laptop13/ros2_nbv_ws/install/octomap_operations/lib/octomap_operations/octomap_operations_node" to ""
+[27.898s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/launch
+[27.898s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/launch/octomap_operations_launch.py
+[27.899s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/config
+[27.899s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/config/octomap_ops_params.yaml
+[27.899s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/ament_index/resource_index/package_run_dependencies/octomap_operations
+[27.900s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/ament_index/resource_index/parent_prefix_path/octomap_operations
+[27.900s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/ament_prefix_path.sh
+[27.900s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/ament_prefix_path.dsv
+[27.900s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/path.sh
+[27.900s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/environment/path.dsv
+[27.901s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.bash
+[27.901s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.sh
+[27.901s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.zsh
+[27.901s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/local_setup.dsv
+[27.902s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/package.dsv
+[27.902s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/ament_index/resource_index/packages/octomap_operations
+[27.902s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/cmake/octomap_operationsConfig.cmake
+[27.902s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/cmake/octomap_operationsConfig-version.cmake
+[27.903s] -- Installing: /home/laptop13/ros2_nbv_ws/install/octomap_operations/share/octomap_operations/package.xml
+[27.906s] Invoked command in '/home/laptop13/ros2_nbv_ws/build/octomap_operations' returned '0': AMENT_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/laptop13/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/laptop13/ros2_nbv_ws/install/octomap_operations_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/laptop13/ros2_nbv_ws/build/octomap_operations

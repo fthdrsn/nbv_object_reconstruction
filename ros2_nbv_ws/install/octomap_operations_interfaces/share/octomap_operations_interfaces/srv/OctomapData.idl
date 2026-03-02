@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from octomap_operations_interfaces/srv/OctomapData.srv
+// generated code does not contain a copyright notice
+
+
+module octomap_operations_interfaces {
+  module srv {
+    struct OctomapData_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct OctomapData_Response {
+      float cvr;
+
+      float ent;
+
+      float unknown;
+
+      float occupied;
+
+      float free;
+    };
+  };
+};

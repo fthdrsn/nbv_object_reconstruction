@@ -1,0 +1,20 @@
+services: 
+      
+ nbv_planner:
+    build:
+      context: ../..  
+      dockerfile: devel/octomap_operations/Dockerfile
+    environment:
+      DISPLAY: $DISPLAY # x server related
+      ROS_DOMAIN_ID: 77 # Set ROS domain ID for all ROS2 nodes
+    privileged: true # Needed for some gpu configurations.
+    volumes:
+      #- repo-data:/root/git/rap2025_wholebodycontrol/software/ROS2/ros2_ws/src/sas_coppeliasim_unitree_b1z1/
+      - /tmp/.X11-unix:/tmp/.X11-unix # x server related
+      - ~/.Xauthority:/root/.Xauthority # x server related
+    network_mode: "host" # x server related
+    ipc: "host"
+    command: /bin/bash -c "      
+      source /opt/ros/jazzy/setup.bash;
+      cd /app/software/ROS2/ros2_ws/ && colcon build && source install/setup.bash;
+      ros2 launch nbv_planner test_candidate_launch.py"

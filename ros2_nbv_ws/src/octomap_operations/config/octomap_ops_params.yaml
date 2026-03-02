@@ -1,0 +1,49 @@
+octomap_operations_node:
+
+  # Camera parameters
+  camera:
+    horizontal_fov: 74.0  # 74 ## Horizontal field of view 60 45
+    vertical_fov: 60.0    # 60 ## Vertical field of view  47  38
+    horizontal_fov_expanded: 90.0  ## Horizontal field of view
+    vertical_fov_expanded: 90.0    ## Vertical field of view
+
+  # Raycast parameters
+  raycast:
+    dphi: 1.5        # 5   ## Vertical angle step
+    dtheta: 1.5      # 5   ## Horizontal angle step
+    r_max: 4.5       # 5   ## Maximum radius to include calculation
+  
+  # Octomap parameters
+  octomap:
+    
+    topic_name: "/octomap_full"  ## Octomap topic name published by octomap_server
+    save_path: "/map_"  ## Path to save octomap
+    cell_size: 0.1  ## Resolution of the octomap
+
+  # Focus point parameters
+  focus_pnt:
+    focus_r: 2.5  ## Radius to calculate the focus point.
+
+  # Boundary parameters
+  boundary:
+    min: [-2.75, -2.75, 0.05]  ## Boundaries to include calculation
+    max: [2.75, 2.75, 4.0]
+
+# Octomap Server parameters
+octomap_server:
+  resolution: 0.1          ## meters per voxel
+  frame_id: "world"         ## fixed frame
+  base_frame_id: "camera_depth_optical_frame" #"DepthCamera"
+  filter_ground: true
+  sensor_model: {
+    max_range: 4.5,
+    min_range: 0.01,
+    }
+
+# Depth image processing parameters
+depth_image_proc:
+  #camera_info_topic: "/sas_b1/b1_1/camera/depth/camera_info"
+  #image_rect_topic: "/sas_b1/b1_1/camera/depth/image_rect_raw"
+  camera_info_topic: "/camera/camera/depth/camera_info"
+  image_rect_topic: "/camera/camera/depth/image_rect_raw"
+  points_topic: "/world/pcl_input"

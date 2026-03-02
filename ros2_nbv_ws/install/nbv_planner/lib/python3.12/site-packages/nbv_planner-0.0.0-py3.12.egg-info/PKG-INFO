@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nbv-planner
+Version: 0.0.0
+Summary: Next Best View planner using octomap services
+Maintainer: Fatih Dursun
+Maintainer-email: fatih.dursun@manchester.ac.uk
+License: LGPL
+Provides-Extra: test

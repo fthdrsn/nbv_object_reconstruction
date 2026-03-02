@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "octomap_operations_interfaces__py",
+		"source" : "/home/laptop13/ros2_nbv_ws/build/octomap_operations_interfaces/octomap_operations_interfaces__py"
+	}
+}

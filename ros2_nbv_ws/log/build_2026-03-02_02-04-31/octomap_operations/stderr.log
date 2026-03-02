@@ -1,0 +1,15 @@
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:[m[K In member function ‘[01m[KEigen::Vector3d octomap_operations::OctomapOperations::[01;32m[Kget_focus_point[m[K(std::vector<float>&, std::shared_ptr<octomap::OcTree>&)[m[K’:
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:37:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_endpoint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   37 |       bool [01;35m[Kfound_endpoint[m[K = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells
+      |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/focus_point_calculation.cpp:19:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kr_ray_cast[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   19 |   double [01;35m[Kr_ray_cast[m[K=raycast_r_max_;
+      |          [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/ig_calculation_methods.cpp:[m[K In member function ‘[01m[Kdouble octomap_operations::OctomapOperations::[01;32m[Kget_view_ig_ent[m[K(std::vector<float>&, std::shared_ptr<octomap::OcTree>&)[m[K’:
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/ig_calculation_methods.cpp:35:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfound_endpoint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   35 |         bool [01;35m[Kfound_endpoint[m[K = ot->castRay( origin, direction, end_point, true, max_range ); // ignore unknown cells
+      |              [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/octomap_operations_main.cpp:[m[K In member function ‘[01m[Kvoid octomap_operations::OctomapOperations::[01;32m[Kget_octomap_data[m[K(std::shared_ptr<octomap_operations_interfaces::srv::OctomapData_Request_<std::allocator<void> > >, std::shared_ptr<octomap_operations_interfaces::srv::OctomapData_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/laptop13/ros2_nbv_ws/src/octomap_operations/src/octomap_operations_main.cpp:299:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcomp_prob[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  299 |   double [01;35m[Kcomp_prob[m[K;
+      |          [01;35m[K^~~~~~~~~[m[K

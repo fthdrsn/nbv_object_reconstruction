@@ -1,0 +1,9 @@
+{
+  "package_name": "octomap_operations_interfaces",
+  "non_idl_tuples": [
+    "/home/laptop13/ros2_nbv_ws/src/octomap_operations_interfaces:srv/FocusPoint.srv",
+    "/home/laptop13/ros2_nbv_ws/src/octomap_operations_interfaces:srv/OctomapData.srv",
+    "/home/laptop13/ros2_nbv_ws/src/octomap_operations_interfaces:srv/StopOctomapUpdate.srv",
+    "/home/laptop13/ros2_nbv_ws/src/octomap_operations_interfaces:srv/ViewEvaluate.srv"
+  ]
+}

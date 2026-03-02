@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "octomap_operations_interfaces/srv/FocusPoint_Request",
+      "fields": [
+        {
+          "name": "pose",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "run_parallel",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "octomap_operations_interfaces/srv/FocusPoint_Request",
+      "hash_string": "RIHS01_dd78b7f57edd915e0eeb833db5a7870fc78abb0707310e658d7e3447241fb0ac"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from octomap_operations_interfaces/srv/FocusPoint.srv
+// generated code does not contain a copyright notice
+
+
+module octomap_operations_interfaces {
+  module srv {
+    struct FocusPoint_Request {
+      sequence<float> pose;
+
+      boolean run_parallel;
+    };
+    struct FocusPoint_Response {
+      sequence<float> focus_pnt;
+
+      float elapsed_time;
+    };
+  };
+};

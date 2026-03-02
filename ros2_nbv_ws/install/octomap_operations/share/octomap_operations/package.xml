@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>octomap_operations</name>
+  <version>0.0.0</version>
+  <description>Package handling octomap operations: building octomap, applying ray casting</description>
+  <maintainer email="fatih.dursun@manchester.ac.uk">Fatih Dursun</maintainer>
+  <license>LGPL</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>octomap_msgs</depend>
+  <depend>octomap_operations_interfaces</depend>
+  <depend>visualization_msgs</depend>
+  
+  <exec_depend>depth_image_proc</exec_depend>
+  <exec_depend>octomap_server</exec_depend>
+  <exec_depend>rclcpp_components</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

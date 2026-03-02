@@ -1,0 +1,8 @@
+srv/FocusPoint.idl
+srv/FocusPoint.srv
+srv/OctomapData.idl
+srv/OctomapData.srv
+srv/StopOctomapUpdate.idl
+srv/StopOctomapUpdate.srv
+srv/ViewEvaluate.idl
+srv/ViewEvaluate.srv
